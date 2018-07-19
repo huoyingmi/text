@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>颜色应用.html</title>
+</head>
+<body>
+	<h1>颜色的取值</h1>
+	<h2>1.用英文单词</h2>
+		<p>英文单词表示颜色主要用来调试,实际开发中用的不多</p>
+		<p>17 种标准色是 aqua（浅绿色）, black（黑色）, blue（蓝色）, fuchsia（紫红色）, gray（灰色的）, green（绿色）, lime（绿黄色）, maroon（栗色）, navy（藏青色）, olive（橄榄色）, orange（橙色）, purple（紫色）, red（红色）, silver（银白色）, teal（青色）, white（白色）, yellow（黄色）,gold（金色）,indigo（深紫色）,brown（棕色）,skyblue（浅蓝色）,tomato（橘色）,pink（粉红色）。</p>
+	<h2>2.用rgb表示</h2>
+	    <p>什么是rgb? &nbsp;&nbsp;&nbsp;&nbsp;rgb就是r(red)红 g(green)绿 b(blue)蓝的缩写，也就是咱们通常说的三原色。可以通过设置三原色的值来确定颜色。</p>
+	    <p>注意点：&nbsp;&nbsp;&nbsp;&nbsp;R,G,B的取值范围0-255,0代表不发光，255代表该颜色最亮.&nbsp;&nbsp;&nbsp;&nbsp;三原色的颜色设置一样的情况下可以调出灰色,值越大越灰</p>
+	    <h2>3.用rgba表示</h2>
+	    <p>rgb和上述的rgb是一样的，a(alpha)就是透明度，取值从0到1，0表示全透明，1表示不透明</p>
+	    <h2>4.十六进制表示方法</h2>
+	    <p>(1)什么是十六进制？逢16位向前进一位,取值从0-9 a-f(a-10,b-11,c-12,d-13,e-14,f-15)</p>
+	    <p>(2)十六进制转十进制&nbsp;&nbsp;&nbsp;&nbsp;<br>
+十进制 = 十六进制的第一位*16 + 十六进制的第二位&nbsp;&nbsp;&nbsp;&nbsp;如: FF = F*16 + F = 15*16 + 15 = 240 + 15 = 255
+&nbsp;&nbsp;&nbsp;&nbsp;如：330=20*16+10=320+10=aa</p>
+	    <p>(3)十进制转十六进制&nbsp;&nbsp;&nbsp;&nbsp;<br>
+除16取余，直到商为0为,余数倒着 <br>例如：331转十六进制用331/16=20余11 再把11/16=0余11 则十六进制是331==bb</p>
+	    <p>(4)格式:#RRGGBB&nbsp;&nbsp;&nbsp;&nbsp;<br>
+两位表示一个十六进制数，RR就是红色，GG就是绿色，BB就是蓝色&nbsp;&nbsp;&nbsp;&nbsp;
+当十六进制的每一个颜色的两位是相同的情况下可以简写,例如：&nbsp;&nbsp;&nbsp;&nbsp;
+#FF0000 ＝ #F00;</p>
+	    <p>注意，简写的条件是每一个颜色的两位表示的值要一样</p>
+</body>
+</html>

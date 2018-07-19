@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动画.html</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			width: 100px;
+			height: 100px;
+			background: red;
+			margin-top: 50px;
+			margin-left: 0px;
+			animation: sport 3s linear 1s infinite normal;
+		}
+		div:hover{
+			animation-play-state: paused;ss
+         }
+
+		@keyframes sport{
+			/*
+			from{
+                margin-left: 0px;
+			}
+			to{
+              margin-left: 500px;
+			}*/
+			0%{
+				margin-left: 0px;
+				opacity: 1;
+			}
+			25%{
+				margin-left: 100px;
+				opacity: 0;
+			}
+			75%{
+				margin-left: 300px;
+				opacity: 1;
+			}
+			100%{
+				margin-left: 500px;
+				opacity: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div>
+	</div>
+</body>
+</html>
