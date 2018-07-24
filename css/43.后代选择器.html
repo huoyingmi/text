@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后代选择器.html</title>
+	<style>
+		/*.color {
+			color: purple;
+			font-size: 20px;
+		}*/
+		header nav a{
+			color: skyblue;
+		}
+		header a{
+			color: purple;
+		}
+		section a{
+			color: red;
+			font-size: 25px;
+		}
+		/*.top1 .top2 a{
+			color: green;
+			font-weight: bold;
+			font-size: 20px;
+		}*/
+		#top1 .top2 a{
+			color: green;
+			font-weight: bold;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="#">a1</a>
+		<nav>
+			<!-- <a class="color" href="#">a1</a>
+			<a class="color" href="#">a2</a>
+			<a class="color" href="#">a3</a>
+			<a class="color" href="#">a4</a> -->
+			<a href="#">aa1</a>
+			<a href="#">aa2</a>
+			<a href="#">aa3</a>
+			<a href="#">aa4</a>
+		</nav>
+	</header>
+	<section>
+		<a href="#">aaa1</a>
+		<a href="#">aaa2</a>
+		<a href="#">aaa3</a>
+		<a href="#">aaa4</a>
+	</section>
+	<!-- <ul class="top1"> -->
+		<ul id="top1">
+		<li class="top2">
+			<a href="#">aaaa1</a>
+			<a href="#">aaaa2</a>
+			<a href="#">aaaa3</a>
+		</li>
+	</ul>
+</body>
+</html>

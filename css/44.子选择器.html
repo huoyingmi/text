@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>子选择器.html</title>
+	<style>
+		header>h1{
+			color: maroon;
+		}
+		header>a{
+			color: red;
+		}
+		#top1>.top2>a{
+			color: green;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		.top1>.top2>a{
+			color: purple;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="#">a1</a>
+		<h1>标题</h1>
+	</header>
+	 <ul id="top1"> 
+		<li class="top2">
+			<a href="#">aaaa1</a>
+			<a href="#">aaaa2</a>
+			<a href="#">aaaa3</a>
+		</li>
+	</ul>
+	<ul class="top1">
+		<li class="top2">
+			<a href="#">aaaa1</a>
+			<a href="#">aaaa2</a>
+			<a href="#">aaaa3</a>
+		</li>
+	</ul>
+</body>
+</html>
