@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>88.行内块状元素垂直对齐.html</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		p{
+			border: 1px solid #000;
+			margin-bottom: 10px;
+
+		}
+		.box{
+			background-color: green;
+			padding-left: 10px;
+			padding-right: 10px;
+			border: 1px solid red;
+			color: white;
+			line-height: 30px;
+
+		}
+		.bot{
+			display: inline-block;
+			width: 5px;
+			height: 5px;
+			margin-right: 10px;
+			background-color: purple;
+			color: white;
+		}
+		p:nth-child(2) .bot{
+			vertical-align: top;
+		}
+		p:nth-child(3) .bot{
+			vertical-align: middle;
+		}
+		p:nth-child(4) .bot{
+			vertical-align: baseline;
+		}
+		p:nth-child(5) .bot{
+			vertical-align: bottom;
+		}
+		p:nth-child(6) .bot{
+			vertical-align: text-bottom;
+		}
+	</style>
+</head>
+<body>
+	<p>
+		<span class="box">
+			<span class="bot"></span>我是文字 默认
+		</span>
+	</p>
+	<p>
+		<span class="box">
+			<span class="bot"></span>我是文字 top
+		</span>
+	</p>
+	<p>
+		<span class="box">
+			<span class="bot"></span>我是文字 middle
+	    </span>
+	</p>
+	<p>
+		<span class="box">
+			<span class="bot"></span>我是文字 baseline
+	    </span>
+	</p>
+	<p>
+		<span class="box">
+			<span class="bot"></span>我是文字 bottom
+	    </span>
+	</p>
+	<p>
+		<span class="box">
+			<span class="bot"></span>我是文字 text-bottom
+	    </span>
+	</p>
+</body>
+</html>
