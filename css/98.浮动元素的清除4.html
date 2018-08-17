@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>96.浮动元素的清除1.html</title>
+	<title>98.浮动元素的清除4.html</title>
 	<style>
 		*{
 			margin: 0;
@@ -26,10 +26,27 @@
 			background: green;
 			float: left;
 		}
+		/*box1:after{
+			content: "";
+			clear: both;
+			display: block;
+			height: 0px;
+			visibility: hidden;
+		}*/
+		.clearfix:after{
+			content: "";
+			clear: both;
+			display: block;
+			height: 0px;
+			visibility: hidden;
+		}
+		.clearfix{
+			*zoom:1;
+		}
 	</style>
 </head>
 <body>
-	<div class="box1">
+	<div class="box1 clearfix">
 		<p>1</p>
 		<p>2</p>
 		<p>3</p>
