@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>113.过度的速度应用.html</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			width: 800px;
+			height: 700px;
+			border: 1px solid #000;
+		}
+		ul li{
+			width: 200px;
+			height: 80px;
+			line-height: 80px;
+			background: pink;
+			list-style: none;
+			text-align: center;
+			margin-top: 20px;
+			transition-property: margin-left;
+			transition-duration: 5s;
+		}
+		ul:hover li{
+			margin-left: 600px;
+		}
+		li:nth-child(2){
+			transition-timing-function: linear;
+		}
+		li:nth-child(3){
+			transition-timing-function: ease;
+		}
+		li:nth-child(4){
+			transition-timing-function: ease-in;
+		}
+		li:nth-child(5){
+			transition-timing-function: ease-out;
+		}
+		li:nth-child(6){
+			transition-timing-function: ease-in-out;
+		}
+		li:nth-cjild(7){
+			transition-timing-function: cubic-bezier(0,0,1,1)
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>1.默认</li>
+		<li>2.linear</li>
+		<li>3.ease</li>
+		<li>4.ease-in</li>
+		<li>5.ease-out</li>
+		<li>6.ease-in-out</li>
+		<li>7.cubic-bezier(贝赛尔曲线)</li>
+	</ul>
+</body>
+</html>

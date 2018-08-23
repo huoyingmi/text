@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>111.定位流综合案例.html</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		header{
+			width: 800px;
+			height: 40px;
+			margin: 20px auto;
+			background: gray;
+			position: fixed;
+			top: 0px;
+			left: 50%;
+			margin-left: -400px;
+			z-index: 999;
+		}
+		header ul li{
+			list-style: none;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			width: 160px;
+			float: left;
+		}
+		header ul li:nth-child(3){
+			background: red;
+			position: relative;
+			/*当父元素不设置position值时，图片相对于浏览器绝对定位，当浏览器变大变小时，图片位置也会变化；而设置之后图片相当于父元素绝对定位，浏览器变化时，图片不变。*/
+		}
+		header ul li:nth-child(3) img{
+			position: absolute;
+			/*top: 31px;
+            left: 748px;*/
+			top: -19px;
+            left: 61px;
+		}
+		.carousel{
+			width: 800px;
+			height: 400px;
+			bottom: 1px solid #000;
+			margin: 100px auto;
+			position: relative;
+		}
+		.carousel img{
+			width: 100%;
+			height: 100%;
+		}
+		.carousel .leftarrow,.carousel .rightarrow{
+			width: 50px;
+			height: 80px;
+			background: rgba(0,0,0,0.5);
+			line-height: 80px;
+			text-align: center;
+			display: block;
+			font-size:30px;
+			color: white;
+			position: absolute;
+			top: 160px; 
+		}
+		.carousel .leftarrow{
+			left:0px;
+		}
+		.carousel .rightarrow{
+			right:0px;
+		}
+		.carousel ul{
+			width: 200px;
+			height: 30px;
+			/*border: 1px solid #000;*/
+			position: absolute;
+			bottom: 10px;
+			right: 10px;
+		}
+		.carousel ul li{
+			list-style: none;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+		    background: rgba(0,0,0,0.3);
+		    float: left;
+			border-radius: 50%;
+			margin-right: 10px;
+			color: white;
+
+		}
+		.leftad,.rightad{
+			width: 100px;
+			height: 150px;
+			background: red;
+			position: fixed;
+			top: 200px;
+		}
+		.leftad{
+			left: 0px;
+		}
+		.rightad{
+			right: 0px;
+		}
+		.backbtn{
+			width: 100px;
+			height: 100px;
+			background: rgba(0,0,0,0.3);
+			line-height: 100px;
+			text-align:center;
+			position: fixed; 
+			bottom: 10px;
+			right: 10px;
+			text-decoration: none;
+			font-size: 20px;
+			color: red;
+		}
+		.centent{
+			width:1000px;
+			height: 2000px;
+			background: blue;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<ul>
+			<li>天猫会员</li>
+			<li>品牌街</li>
+			<li>
+				电器城  <img src="../html/img/tmall.jpg" alt="">
+			</li>
+			<li>营业厅</li>
+			<li>魅力会</li>
+		</ul>
+	</header>
+	<div class="carousel">
+		<img src="../html/img/ad1.jpg" alt="">
+		<span class="leftarrow">&lt;</span>
+		<!-- 此处的&lt;是<的意思 -->
+		<span class="rightarrow">&gt;</span>
+		<!-- 此处的&gt;是>的意思 -->
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+	</div>
+	<div class="leftad"></div>
+	<div class="rightad"></div>
+	<a href="#" class="backbtn">返回顶部</a>
+	<div class="centent">滚动条内容</div>
+</body>
+</html>
