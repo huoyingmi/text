@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>04-002-2-免登录提示框js版本.html</title>
+	<style>
+		div{
+			width: 400px;
+			height: 50px;
+			background: #ccc;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<!-- <input type="checkbox" 
+	onmouseover="box.style.display='block';"
+	onmouseout="box.style.display='none';"> -->
+	<input type="checkbox" 
+	onmouseover="document.getElementById('box').style.display='block';"
+	onmouseout="document.getElementById('box').style.display='none';">
+	<div id="box">
+		为了您的信息安全，请不要在公共场所使用此功能
+	</div>
+</body>
+</html>

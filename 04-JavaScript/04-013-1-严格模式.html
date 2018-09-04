@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>04-013-1-严格模式.html</title>
+	<script>
+		// 'use strict'
+		function sayHi(){
+		    // var hi='hi';
+		     hi = 'hi';
+			alert(hi);
+		}
+// 当有var指定hi时添加'use strict'没有影响是正确的、但是没有var时添加'use strict'就是不正确的。
+// 针对整个文件,将"use strict"放在脚本文件的第一行,则整个脚本都将以"严格模式"运行,如果这行语句不在第一行,则无效
+        sayHi();
+	</script>
+</head>
+<body>
+
+</body>
+</html>
