@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>04-019-选项卡案例.html</title>
+	<meta charset="UTF-8">
+	<title>04-019-2-选项卡案例完整.html</title>
 	<style>
 		div{
 			width: 100px;
 			height: 100px;
-			background: #ccc;
+			background-color: #ccc;
 			display: none;
 		}
 		.active{
-			background-color: red;
+			background-color: yellow;
 		}
 	</style>
 	<script>
 		window.onload = function(){
 			var aBtn = document.getElementsByTagName('input');
 			var aDiv = document.getElementsByTagName('div');
+			/*console.log(aBtn);可有可无
+			console.log(aDiv);*/
 			for(var i = 0;i<aBtn.length;i++){
-				for(var j = 0;j<aBtn.length;j++){
-					aBtn[j].className = '';
-					aBtn[j].style.display = 'none';
+				// console.log(aBtn[i]);
+				aBtn[i].index = i;
+				aBtn[i].onclick = function(){
+					// console.log(this);
+					for(var j = 0;j<aBtn.length;j++){
+						aBtn[j].className = '';
+						aDiv[j].style.display = 'none';
+					}
+	                this.className = 'active';
+ // 此处this指点到那个的按钮，也是aBtn[i].onclick指代的谁就是谁
+                    // aDiv[i].style.display = 'block';
+					aDiv[this.index].style.display = 'block';
+					// alert(i);
 				}
-				this.className = 'active';
-				aDiv[this.index].style.display = 'block';
-				// alert(i);
 			}
 		}
 	</script>

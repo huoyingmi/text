@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>04-028-2-求和2.html</title>
+	<script>
+		window.onload = function(){
+			var oTxt1 = document.getElementById('txt1');
+			var oTxt2 = document.getElementById('txt2');
+			var oBtn = document.getElementById('btn');
+			oBtn.onclick = function(){
+				var a = '-x12dkckal'; 
+				var b = 'xxxx';
+				alert(parseInt(a));
+				alert(parseInt(b));
+
+				/*if(parseInt(a) == parseInt(b)){
+					alert('相等');
+				}else{
+					alert('不等');
+				}*/
+				// 用下面的isNaN来检查parseInt(a)是不是等于NaN.
+				if(isNaN(parseInt(a))){
+					alert('不是数字');
+				}else{
+					alert('是数字');
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="txt1">
+	<input type="text" id="txt2">
+	<input type="button" value="求和" id="btn">
+</body>
+</html>

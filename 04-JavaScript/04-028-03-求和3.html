@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>04-028-03-求和3.html</title>
+	<script>
+		window.onload = function(){
+			var oTxt1 = document.getElementById('txt1');
+			var oTxt2 = document.getElementById('txt2');
+			var oBtn = document.getElementById('btn');
+			oBtn.onclick = function(){
+				var value1 = parseInt(oTxt1.value);
+				var value2 = parseInt(oTxt2.value);
+
+				if(isNaN(value1)){
+					alert('你输入的第一个数有误，请重新输入')
+				}else if(isNaN(value2)){
+					alert('你输入的第二个数有误，请重新输入')
+				}else{
+					alert(value1 + value2);
+				}
+				// alert(value1 + value2);
+				// alert(parseInt(oTxt1.value) + parseInt(oTxt2.value));
+		    }
+		 }   
+	</script>
+</head>
+<body>
+    <input type="text" id="txt1">
+	<input type="text" id="txt2">
+	<input type="button" value="求和" id="btn">
+</body>
+</html>
