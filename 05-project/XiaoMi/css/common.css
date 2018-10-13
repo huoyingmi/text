@@ -1,0 +1,19 @@
+.container{
+	width: 1226px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.clearfix:after{
+	content:'';
+	display: block;
+	clear: both;
+	height: 0px;
+	visibility: hidden;
+	/*清除浮动*/
+}
+.clearfix{
+	*zoom:1;
+}
+body{
+	font-size: 12px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>04-041-变量的作用域.html</title>
+	<script>
+		var b = 2;  //全局变量
+		var a = 11;
+		function show(){
+			var a = 1;  //局部变量
+			// alert(a);
+			// alert(b);
+			return a;
+		}
+		function say(){
+			// alert(a);
+			alert(b);
+		}
+		alert(a);   //显示现在值
+		alert(show());  //显示返回值
+		say();
+	</script>
+</head>
+<body>
+
+</body>
+</html>

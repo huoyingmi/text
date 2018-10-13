@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>04-045-递归求阶层.html</title>
+	<script>
+		//5! = 5*4*3*2*1
+		function fn(n){  //fn自命名可换，代表阶层的意思
+			if(n<=1){
+				return 1;
+			}else{
+				return n*fn(n-1);
+			}
+		}
+		alert(fn(5));
+	</script>
+</head>
+<body>
+
+</body>
+</html>
