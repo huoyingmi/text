@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>04-058-03-添加删除行.html</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oBtn = document.getElementById('btn');
+			var oTxt = document.getElementById('txt');
+			var oUl = document.getElementById('ul1');
+			oBtn.onclick = function(){
+				var oLi = document.createElement('li');
+				oLi.innerHTML = oTxt.value;
+				oUl.appendChild(oLi);
+
+				var oA = document.createElement('a');
+				oA.innerHTML = 'delete';
+				oA.href = 'javascript:;'
+				oA.onclick = function(){
+					oUl.removeChild(oLi);
+				}
+				oLi.appendChild(oA);
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<input type="button" id="btn" value="添加元素">
+	<input type="text" id="txt">
+	<ul id="ul1">
+		<li>aaa</li>
+		<li>bbb</li>
+		<li>ccc</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>04-054-获取首尾子节点.html</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oUl = document.getElementById('ul1');
+			console.log(oUl.firstElementChild);
+			oUl.firstElementChild.style.color = 'red';
+			console.log(oUl.lastElementChild);
+			oUl.lastElementChild.style.color = 'blue';
+		}
+	</script>
+</head>
+<body>
+	<ul id="ul1">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>04-057-02-封装通过类名称获取元素函数.html</title>
+	<style type="text/css">
+		#box>div{
+			width: 300px;
+			height: 50px;
+			border: 1px solid #000;
+		}
+	</style>
+	<script type="text/javascript">
+		function getElementsByClass(obj,sclass){
+			var result = [];
+			var aEle = obj.children;
+			for(var i = 0; i<aEle.length; i++){
+				if(aEle[i].className == sclass){
+					result.push(aEle[i]);
+				}
+			}
+			return result;
+		}
+		window.onload = function(){
+			var oBox = document.getElementById('box');
+			var aDiv = getElementsByClass(oBox,'box');
+			for(i in aDiv){
+				aDiv[i].style.background = 'blue';
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="box">
+		<div></div>
+		<div class="box"></div>
+		<div></div>
+		<div class="box"></div>
+		<div></div>
+		<div class="box"></div>
+	</div>
+</body>
+</html>

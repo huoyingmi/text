@@ -1,2 +1,0 @@
-02-html/img
-05-project/img
