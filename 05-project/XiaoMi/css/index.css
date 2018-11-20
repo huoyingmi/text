@@ -185,7 +185,7 @@ a:hover{
 .hot .cate{
 	width: 234px;
 	height: 460px;
-	background: blue;
+	/*background: blue;*/
 	position: absolute;
 	top: 0;
 	left: 0;
